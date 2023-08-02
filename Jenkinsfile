@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         // Set up environment variables if required
-        JAVA_HOME = '/path/to/your/java/home'
-        MAVEN_HOME = '/path/to/your/maven/home'
+        JAVA_HOME = '/usr/bin/java'
+        MAVEN_HOME = '/usr/bin/mvn'
         // You can also set up other environment variables for your project here
     }
 
