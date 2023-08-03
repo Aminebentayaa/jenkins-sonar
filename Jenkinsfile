@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Set up environment variables if required
         JAVA_HOME = '/usr/bin/java'
-        MAVEN_HOME = tool 'Maven 3.6.3'
+    
         // You can also set up other environment variables for your project here
     }
 
