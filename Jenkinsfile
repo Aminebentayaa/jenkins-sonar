@@ -45,10 +45,5 @@ pipeline {
       
     }
 
-    post {
-        always {
-            // Clean up after the build
-            sh 'mvn clean'
-        }
-    }
+   
 }
