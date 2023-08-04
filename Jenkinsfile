@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Set up environment variables if required
-        JAVA_HOME = '/opt/java/openjdk/bin/java
+        JAVA_HOME = '/opt/java/openjdk/bin/java'
 '
     
         // You can also set up other environment variables for your project here
