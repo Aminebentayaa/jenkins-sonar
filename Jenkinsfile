@@ -16,12 +16,20 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Aminebentayaa/jenkins-sonar.git'
             }
         }
+        
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('sonar') {
+                    sh 'mvn sonar:sonar'
+                }
+            }
+        }
 
         stage('Build') {
             steps {
                 // Build the Spring Boot project using Maven
                 // Replace 'mvn' with the actual command if Jenkins is not aware of it
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn clean package install'
                 // This will create a JAR file in the 'target' directory
             }
         }
